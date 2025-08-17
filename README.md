@@ -15,19 +15,26 @@ API para consulta e gestão de dados do Censo Escolar, desenvolvida em Flask.
 git clone https://github.com/seu-usuario/censo-escolar-api.git
 cd censo-escolar-api
 ```
-#instalção do ambiente virtual
-python -m venv venv
 
-#Ativação do ambiente
+### 2. instalção do ambiente virtual
+```bash
+python -m venv venv
+```
+
+## 3. Ativação do ambiente
+```bash
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
+```
 
-#Instalar dependências
+## 4. Instalar dependências
+```bash
 pip install -r requirements.txt
+```
 
-#Iniciar a API
-
+## 5. Iniciar a API
+```bash
 flask run
 # ou
 python app.py
-
+```
