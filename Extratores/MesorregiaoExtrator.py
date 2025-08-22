@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from helpers.logging import logger
+from config.logging_config import logger
 
 
 url = "https://servicodados.ibge.gov.br/api/v1/localidades/mesorregioes"

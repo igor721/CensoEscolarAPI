@@ -2,11 +2,11 @@ import sqlite3
 import csv
 import json
 
-DB_FILE = "censoescolar.db"
+DB_FILE = "./data/censoescolar.db"
 SCHEMA_FILE = "schema.sql"
-CSV_FILE = "censo_escolar.csv"
-JSON_ESTADOS_FILE = "estados_nordeste.json"
-JSON_MUNICIPIOS_FILE = "municipios_nordeste.json"
+CSV_FILE = "./data/censo_escolar.csv"
+JSON_ESTADOS_FILE = "./data/estados_nordeste.json"
+JSON_MUNICIPIOS_FILE = "./data/municipios_nordeste.json"
 
 
 with sqlite3.connect(DB_FILE) as connection:
@@ -96,7 +96,7 @@ with sqlite3.connect(DB_FILE) as connection:
 
     connection.commit()
 
-    JSON_MESORREGIOES_FILE = "mesorregioes_nordeste.json"
+    JSON_MESORREGIOES_FILE = "./data/mesorregioes_nordeste.json"
 
 with sqlite3.connect(DB_FILE) as connection:
     cursor = connection.cursor()
@@ -120,7 +120,7 @@ with sqlite3.connect(DB_FILE) as connection:
 
     connection.commit()
 
-JSON_MICRORREGIOES_FILE = "microrregioes_nordeste.json"
+JSON_MICRORREGIOES_FILE = "./data/microrregioes_nordeste.json"
 
 with sqlite3.connect(DB_FILE) as connection:
     cursor = connection.cursor()

@@ -46,3 +46,9 @@ Para testar, execute o arquivo init_db.py, que será o inicializador do nosso ba
 Após isso, execute o migrate_sql.py que será responsável por migrar nossos dados presentes no arquivo censo_escolar.json para o banco sql
 
 Finalizando, execute o "flask run" e faça as requisições para testar
+
+
+## 7. Comandos para executar
+
+python -m venv venv 
+pip install -r requirements.txt 

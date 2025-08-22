@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 import json
-from helpers.logging import logger
+from config.logging_config import logger
 
 
 url = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"

@@ -3,7 +3,7 @@ from flask import g
 
 from application import app
 
-DATABASE = 'censoescolar.db'
+DATABASE = './data/censoescolar.db'
 
 
 def getConnection():

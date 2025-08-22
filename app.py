@@ -5,8 +5,8 @@ from marshmallow import ValidationError
 
 from application import app
 from database import getConnection
-from logging import logger
-from CORS import cors
+from config.logging_config import logger
+from application.CORS import cors
 
 from Models.InstituicaoEnsino import InstituicaoEnsino, InstituicaoEnsinoSchemas, UFSchema, MesorregiaoSchema, MicrorregiaoSchema, MunicipioSchema
 
@@ -39,7 +39,7 @@ def instituicoesResource():
             instituicaoEnsino = InstituicaoEnsino(
                 row[0], row[1], row[2], row[3],
                 row[4], row[5], row[6], row[7],
-                row[8]
+                row[8], row[9]
             )
             instituicoesEnsino.append(instituicaoEnsino.toDict())
 
